@@ -1334,7 +1334,8 @@ ___SCMOBJ host;)
   /* guarantee that at least one address is returned */
 
   if (lst == ___NUL)
-    result = ___FIX(___H_ERRNO_ERR(NO_ADDRESS));
+    result = ___FIX(___H_ERRNO_ERR(4));
+    // echo -e '#include <netdb.h>\n#include <stdio.h>\nint main () { printf("hello %d\\n",NO_ADDRESS); }\n' > test.c && gcc test.c -o test && ./test
   else
     result = ___ps->saved[0];
 
