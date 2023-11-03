@@ -3454,7 +3454,7 @@ ___FIX((((___BIGMDOUBLEDIGIT)___BIGMFETCH(___BODY_AS(u,___tSUBTYPED),___INT(___B
 
 #endif
 
-#ifdef ___USE_builtin_clrsb
+#ifdef false
 
 #define ___LOG2_WORD_TEMP() ((___WORD_WIDTH-1) - ___CLRSB_WORD_TEMP())
 
